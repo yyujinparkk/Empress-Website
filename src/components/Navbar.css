@@ -35,6 +35,7 @@ nav ul.left-menu{
     flex-grow: 1;
     justify-content: flex-end; /* Ensures the menus stay close to the logo */
     padding-right: 0.5rem;
+    padding-left: 9rem; /*centers the navbar sections*/
 }
 
 nav ul.right-menu{
@@ -67,6 +68,7 @@ nav ul li a {
     padding: 0.5rem;
     margin: 0 0.5rem;
     border-radius: 0.5rem;
+    font-size: 17px;
     /* makes font slightly thicker*/
     font-weight: 500;
 }
@@ -140,3 +142,21 @@ nav .menu span{
         margin: 0.2rem, 0.5rem;
     }
 }
+
+.iglogo img {
+    height: 21px; /* Adjust this value to make the logo smaller */
+    width: auto;
+    padding-right: 1rem;
+  }
+
+  .linkedin_logo img{
+    height: 27px;
+    width: auto;
+    padding-right: 0.8rem;
+  }
+
+  .facebook_logo img{
+    height: 27px;
+    width: auto;
+    padding-right: 2rem;
+  }

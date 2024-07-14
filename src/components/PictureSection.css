@@ -4,8 +4,8 @@
 
 /* Styles for the image container */
 .img-container{
-    background: url('../assessts/empressgradpic.jpg') center center/cover no-repeat;
-    height: 100vh;
+    background: url('../assessts/empressgradpic2.JPG') center center/cover no-repeat;
+    height: 87vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -17,8 +17,8 @@
 /* Styles for the image */
 .img-container img{
     object-fit: cover;
+    height: 87vh;
     width: 100%;
-    height: 100%;
     position: fixed;
     z-index: -1;
 }
@@ -28,7 +28,7 @@
     content: '';
     position: absolute;
     width: 100%;
-    height: 100vh;
+    height: 87vh;
     background: rgba(255, 255, 255, 0.4); /* White overlay with semi-transparent background */
 }
 
@@ -36,7 +36,7 @@
     position: relative; /* Ensure it stays within the flow of the container */
     /*controls the stacking order of elements*/
     z-index: 3; /* ensure it stays above the overlay */
-    margin-top: 60px; /* adjust this value to move the text further down */
+    margin-top: 80px; /* adjust this value to move the text further down */
     margin-bottom: 0;
     color: white;
     font-size: 1.5rem;
@@ -49,8 +49,29 @@
     position: relative;
     z-index: 3;
     margin-top: 0; /* adjust this value to move the text further down */
+    margin-bottom: 0;
     color: white; 
     font-size: 3rem;
     font-family: 'Amiri', serif;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+}
+
+/*style the button container*/
+.learn-more-btn {
+    position: relative;
+    text-decoration: none;
+    margin-bottom: 10px;
+    margin-top: 7px;/* moves button more down*/
+}
+
+/*style the button itself*/
+.btns{
+    font-size: 1rem;
+    font-weight: 500;
+    height: 6vh;
+    width: 14vh;
+    color: white; /* text color */
+    border: 3px solid white; /* outline color */
+    background-color: transparent; /* adds transparent background */
+    font-family: 'Oxygen';
 }
