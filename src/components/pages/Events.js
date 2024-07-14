@@ -1,11 +1,11 @@
 import React from 'react'
 
-export const About = () => {
+export const Events=() =>{
   return (
     <div>
-      About
+      Events
     </div>
   )
 }
 
-export default About
+export default Events

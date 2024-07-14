@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&display=swap');
 
 /*resets default border and margin*/
 body, html {
@@ -6,51 +6,80 @@ body, html {
     padding: 0;
 }
 
-.active{
-    background-color: #2174cd;
-}
-
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #53b7fa;
+    background-color: #b4defa;
     position: sticky;
     top: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* adds a shadow to the bottom of the navbar */
+    z-index: 1000; /* ensure the navbar stays on top and doesn't interfere with any other element */
 }
 
-nav .title{
-    /*serif is added just in case the font Playfair Display is not working*/
-    font-family: 'Playfair Display', serif;
-    font-size: 1.5rem;
-    margin: 1rem;
-    font-weight: bold;
-    text-decoration: none;
-    color: white;
+/* style the logo image */
+nav .EmpressLogo img {
+    height: 95px;
+    padding: 0.3rem;
+    margin: 0 0.5rem;
 }
 
 nav ul {
     display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
+
+nav ul.left-menu{
+    flex-grow: 1;
+    justify-content: flex-end; /* Ensures the menus stay close to the logo */
+    padding-right: 0.5rem;
+}
+
+nav ul.right-menu{
+    flex-grow: 1;
+    justify-content: flex-start; /* Ensures the menus stay close to the logo */
+}
+
+nav ul.left-menu {
+    margin-right: auto; /* Pushes the logo to the right */
+}
+
+nav ul.right-menu {
+    margin-left: auto; /* Ensures right menu items stay on the right */
+}
+
+nav ul.combined-menu {
+    display: none; /* Hidden by default */
+  }
 
 nav ul li {
     list-style: none
 }
 
 nav ul li a {
-    font-family: 'Quicksand', serif;
+    /*serif is added just in case the font Playfair Display is not working*/
+    font-family: 'Oxygen', serif;
     display: block;
     text-decoration: none;
-    color: white;
+    color: #0d2e82;
     padding: 0.5rem;
     margin: 0 0.5rem;
     border-radius: 0.5rem;
+    /* makes font slightly thicker*/
+    font-weight: 500;
 }
 
 /*show diff color when hovering over element*/
 nav ul li a:not(.active):hover{
-    background-color: #4994e4;
+    color: #3a7fdf;
 }
+
+.active{
+    color: #3a7fdf;
+}
+
 
 nav .menu {
     display: none;
@@ -67,12 +96,12 @@ nav .menu {
 nav .menu span{
     height: 0.4rem;
     width: 100%;
-    background-color: #fefefe;
+    background-color: #0d2e82;
     border-radius: 0.2rem;
 }
 
 /*used to show dropdown menu when screen minimizes to a certain size*/
-@media (max-width: 525px){
+@media (max-width: 600px){
     nav .menu{
         display: flex;
     }
@@ -91,6 +120,15 @@ nav .menu span{
 
     nav ul.open{
         display: flex;
+    }
+
+    nav ul.left-menu,
+    nav ul.right-menu {
+        display: none; /* Hide the left and right menus */
+    }
+
+    nav ul.combined-menu{
+        width: 100%;
     }
 
     nav ul li{
