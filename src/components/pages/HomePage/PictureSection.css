@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+/* Styles for the image container */
+.img-container{
+    background: url('../../../assessts/empressgradpic2.JPG') center center/cover no-repeat;
+    height: 87vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.2);
+    object-fit: contain;
+    
+}
+
+/* Styles for the image */
+/*.img-container img{
+    object-fit: cover;
+    height: 87vh;
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+}*.
+
+/* White overlay */
+.img-container::before {
+    content: '';
+    position: absolute;
+    height: 87vh;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.4); /* White overlay with semi-transparent background */
+}
+
+.img-container h1{
+    position: relative; /* Ensure it stays within the flow of the container */
+    /*controls the stacking order of elements*/
+    z-index: 3; /* ensure it stays above the overlay */
+    margin-top: 80px; /* adjust this value to move the text further down */
+    margin-bottom: 0;
+    color: white;
+    font-size: 1.4rem;
+    font-family: 'Oxygen', serif;
+    font-weight: 300;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+}
+
+.img-container h2{
+    position: relative;
+    z-index: 3;
+    margin-top: 0; /* adjust this value to move the text further down */
+    margin-bottom: 0;
+    color: white; 
+    font-size: 3rem;
+    font-family: 'Amiri', serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+}
+
+/*style the button container*/
+.learn-more-btn {
+    position: relative;
+    text-decoration: none;
+    margin-bottom: 10px;
+    margin-top: 7px;/* moves button more down*/
+}
+
+/*style the button itself*/
+.btns{
+    font-size: 1rem;
+    font-weight: 500;
+    height: 6vh;
+    width: 14vh;
+    color: white; /* text color */
+    border: 3px solid white; /* outline color */
+    background-color: transparent; /* adds transparent background */
+    font-family: 'Oxygen';
+}
+
+

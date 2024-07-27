@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+.about{
+    background-color: white;
+    position: relative;
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: center;
+    color: #0d2e82;
+    padding-top: 20px;
+    font-family: 'Amiri', sans-serif;
+    bottom:-25px;
+}
+
+.about p{
+    font-size: 1rem;
+    font-weight: 100;
+    font-family: 'Oxygen', sans-serif;
+    letter-spacing: 0.05em;
+    word-spacing: 0.05em;
+    padding-bottom: 10px;
+}
+
+.about h1{
+    background-color: rgb(235, 233, 233);
+    font-size: 2.5rem;
+    font-family: 'Amiri', sans-serif;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    letter-spacing: 0.05em;
+}
+
+.about h1 p{
+    font-size: 1rem;
+    font-weight: 100;
+    font-family: 'Oxygen', sans-serif;
+    letter-spacing: 0.05em;
+    word-spacing: 0.05em;
+    padding-bottom: 5px;
+}
+
+.about h1 p + p{
+    font-size: 1rem;
+    font-weight: 100;
+    font-family: 'Oxygen', sans-serif;
+    letter-spacing: 0.05em;
+    word-spacing: 0.05em;
+    padding-bottom: 5px;
+}
+
+.about h1 p + p + p{
+    font-size: 1rem;
+    font-weight: 100;
+    font-family: 'Oxygen', sans-serif;
+    letter-spacing: 0.05em;
+    word-spacing: 0.05em;
+}
+
+.about .nami-link{
+    color: #0d2e82;
+    text-decoration: none;
+}
+
+.about .nami-link:not(.active):hover{
+    color: #3a7fdf;
+}
+
+.about span {
+    display: block; /* Each span will be displayed as a block, causing line breaks */
+    margin-bottom: 10px; /* Adds space between lines */
+  }
+
+.pic-container {
+    display: flex;
+    align-items: flex-start; /* Align items to the top */
+}
+
+.pic1 img,
+.pic2 img,
+.pic3 img{
+    height: 28vh;
+    width: auto;
+    padding-top: 30px;
+} 
+
+.pic1 img{
+    padding-left: 220px;
+}
+
+.pic2 img{
+    padding-left: 40px;
+}
+
+.pic3 img{
+    
+    padding-left: 40px;
+}

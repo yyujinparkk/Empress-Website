@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+.footer {
+    background-color: #babcc1;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    font-family: 'Amiri', sans-serif;
+    margin-top: auto;
+    flex-direction: column;
+    align-items: center; /* Center align all children elements */
+  }
+
+  .logos-footer {
+    display: flex;
+    justify-content: center; /* Center the logos within the footer */
+    align-items: center; /* Center the logos vertically within the container */
+    padding-top: 50px;
+  }
+
+ .logos-footer .iglogo img {
+    height: 45px; /* Adjust this value to make the logo smaller */
+    width: auto;
+    padding-left: 1rem;
+    padding-right: 2.6rem;
+    padding-top: 0.2rem;
+  }
+
+  .logos-footer .linkedin_logo img{
+    height: 52px;
+    width: auto;
+    padding-right: 2.3rem;
+    padding-top: 0.1rem;
+  }
+
+  .logos-footer .facebook_logo img{
+    height: 53px;
+    width: auto;
+    padding-right: 2rem;
+    padding-top: 0.1rem;
+  }
+
+  .footer p {
+    font-size: 20px;
+    padding-top: 17px;
+    margin-bottom: 7px;
+  }

@@ -92,6 +92,8 @@ nav .menu {
     justify-content: space-between;
     width: 2.25rem;
     height: 2rem;
+    padding-top: 25px;
+    padding-right: 7px;
 }
 
 /*designing the dropdown*/
@@ -117,7 +119,7 @@ nav .menu span{
         display: none;
         flex-direction: column;
         width: 100%;
-        margin-bottom: o.25rem;
+        margin-bottom: 0.25rem;
     }
 
     nav ul.open{
@@ -125,7 +127,7 @@ nav .menu span{
     }
 
     nav ul.left-menu,
-    nav ul.right-menu {
+    nav ul.right-menu{
         display: none; /* Hide the left and right menus */
     }
 
@@ -141,21 +143,31 @@ nav .menu span{
     nav ul li a {
         margin: 0.2rem, 0.5rem;
     }
+
+    nav div {
+        display:none
+    }
+    
 }
 
-.iglogo img {
+.logos {
+    display: flex;
+}
+
+ .logos .iglogo img {
     height: 21px; /* Adjust this value to make the logo smaller */
     width: auto;
     padding-right: 1rem;
+    padding-top: 4px;
   }
 
-  .linkedin_logo img{
+  .logos .linkedin_logo img{
     height: 27px;
     width: auto;
     padding-right: 0.8rem;
   }
 
-  .facebook_logo img{
+  .logos .facebook_logo img{
     height: 27px;
     width: auto;
     padding-right: 2rem;
